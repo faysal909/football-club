@@ -23,11 +23,33 @@ main{
 =================*/
 header{
     height: 677px;
-    width: 100%;
+   
     background-color: #2D25A0;
     margin-bottom: 70px;
-   
+    padding-left: 156px;
+    padding-right: 124px;
+    padding-top: 153px;
 }
+header >section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 500px;
+    width: 50%;
+    border: 1px solid red;
+}
+.feature-heading{
+    padding-top: 40px;
+}
+.feature-image{
+    background-image: url(images/banner1.png);
+    background-repeat: no-repeat;
+    height: 438px;
+    width: 556px;
+}
+
 /* .section{
     height: 300px;
     width: 300x;
@@ -39,9 +61,6 @@ header{
     
 } */
 
-.heading-h1{
-
-}
 .head-section{
     margin-left: 150px;
      display: flex;
@@ -53,9 +72,14 @@ header{
     width: 500px;
 
 }
+
 .feature-heading h1{
     color: white;
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
 }
+
 .btn{
     color: white;
     background-color:  #E02C6D ;
@@ -69,6 +93,7 @@ header{
     margin-left: 8px;
     height: 24px;
     width: 24px;
+    
 }
 
 /* player style */
@@ -130,4 +155,11 @@ footer{
 .copyright{
     margin-top: 20px;
     text-align: center;
+}
+
+
+@media  screen and(max-width:688px) {
+    body{
+        background-color: red;
+    }
 }
