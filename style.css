@@ -21,45 +21,33 @@ main{
 /* ===============
    style for header 
 =================*/
-header{
+header {
     height: 677px;
-   
+    width: 100%;
     background-color: #2D25A0;
+    padding-top: 100px;
     margin-bottom: 70px;
-    padding-left: 156px;
-    padding-right: 124px;
-    padding-top: 153px;
 }
-header >section{
+.head-content{
     display: flex;
-    align-items: center;
     justify-content: center;
+    gap: 125px;
 }
-.box{
-    height: 500px;
-    width: 50%;
-    border: 1px solid red;
+.feature-heading a{
+    text-decoration: none;
 }
+
+
 .feature-heading{
     padding-top: 40px;
 }
 .feature-image{
-    background-image: url(images/banner1.png);
-    background-repeat: no-repeat;
+  
     height: 438px;
     width: 556px;
 }
 
-/* .section{
-    height: 300px;
-    width: 300x;
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    
-} */
+
 
 .head-section{
     margin-left: 150px;
@@ -94,16 +82,11 @@ header >section{
     height: 24px;
     width: 24px;
     
-}
+} 
 
 /* player style */
-.container{
-  
-    /* margin-left: 180px;
-    margin-right: 210px;
-    */
-    
-}
+
+
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -124,9 +107,34 @@ header >section{
 .player img{
     height: 256px;
 }
+
+/* for extra section  */
+.extra{
+    height: 500px;
+    padding-left: 156px;
+    padding-right: 124px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 165px;
+    margin-bottom: 158px;
+    gap: 50px;
+}
+.highlight{
+    border: 1px solid red;
+    height: 500px;
+}
+.match-summary{
+    display: flex;
+}
+
+.match-summary img{
+    height: 200px;
+    width: 300px;
+}
 footer{
     display: flex;
-    
     align-items: center;
     justify-content: center;
 }
@@ -157,9 +165,47 @@ footer{
     text-align: center;
 }
 
+/* for players content */
+@media  screen and (max-width:688px) {
+  header{
+    height: 695px;
+    width: 100%;
+    background-color: #2D25A0;
+    
+    margin-bottom: 70px;
+    
+  }
+  .head-content{
+      width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-gap: 125px;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    padding: 0px;
+}
+.feature-heading{
+    height: 260px;
+    width: 330px;
+}
+.feature-heading h1{
+    width: 278px;
+}
+   .players{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    /* grid-template-rows: repeat(4,1fr); */
+    grid-row-gap:27px;
+    grid-column-gap:15px;
+    justify-content: center;
+    align-items: center;
+   }
+   footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
 
-@media  screen and(max-width:688px) {
-    body{
-        background-color: red;
-    }
+ 
+  
 }
